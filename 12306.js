@@ -36,7 +36,7 @@
   }
 } */
 
-ley res = $response.body;
+let res = $response.body;
 var body = JSON.parse(res);
 
 body['code'] = '00';
