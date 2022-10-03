@@ -37,11 +37,15 @@
 } */
 
 let res = $response.body;
-var body = JSON.parse(res);
+let body = JSON.parse(res);
 
 body['code'] = '00';
 body['materialsList'] = [];
 body['rid'] = '';
+
+let param = body['advertParam'];
+param.showSkipBtn = 0;
+body.advertParam = param;
 
 //body['advertParam'] = {};
 
