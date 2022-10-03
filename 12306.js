@@ -49,6 +49,7 @@ if(body.advertParam) {
   body.advertParam.skipTimeAgain = 0;
   body.advertParam.chacheTime = 0;
   body.advertParam.fixedscreen = 0;
+  body.advertParam.isFullScreen = 0;
   body.advertParam.isDefault = 1;
   body.advertParam.displayNumDi = 0;
   body.advertParam.index = 0;
@@ -80,6 +81,6 @@ body['advertParam']['bs'] = 0;
 
 result = JSON.stringify(body);
 
-console.log(result);
+//console.log(result);
 
 $done(result);
