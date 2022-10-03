@@ -39,15 +39,18 @@
 var res = $response.body;
 var body = JSON.parse(res);
 
-body['code'] = 99;
+body['code'] = '00';
 body['materialsList'] = [];
 body['advertParam']['marginBottom'] = 0;
-body['advertParam']['skipTime'] = -1;
+body['advertParam']['skipTime'] = 0;
 body['advertParam']['showSkipBtn'] = 0;
-body['advertParam']['skipTimeAgain'] = -1;
-body['advertParam']['chacheTime'] = -1;
-body['advertParam']['displayNumDi'] = -1;
-body['advertParam']['index'] = -1;
+body['advertParam']['skipTimeAgain'] = 0;
+body['advertParam']['chacheTime'] = 0;
+body['advertParam']['fixedscreen'] = 0;
+body['advertParam']['isDefault'] = 1;
+body['advertParam']['displayNumDi'] = 0;
+body['advertParam']['index'] = 0;
+body['advertParam']['bs'] = -1;
 
 result = JSON.stringify(body);
 
