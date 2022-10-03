@@ -50,7 +50,7 @@ body['advertParam']['fixedscreen'] = 0;
 body['advertParam']['isDefault'] = 1;
 body['advertParam']['displayNumDi'] = 0;
 body['advertParam']['index'] = 0;
-body['advertParam']['bs'] = -1;
+body['advertParam']['bs'] = 0;
 
 result = JSON.stringify(body);
 
