@@ -41,6 +41,7 @@ var body = JSON.parse(res);
 
 body['code'] = '00';
 body['materialsList'] = [];
+body['rid'] = '';
 body['advertParam']['marginBottom'] = 0;
 body['advertParam']['skipTime'] = 0;
 body['advertParam']['showSkipBtn'] = 0;
