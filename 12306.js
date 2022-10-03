@@ -36,13 +36,14 @@
   }
 } */
 
-var res = $response.body;
+ley res = $response.body;
 var body = JSON.parse(res);
 
 body['code'] = '00';
 body['materialsList'] = [];
 body['rid'] = '';
-body['advertParam'] = {};
+
+//body['advertParam'] = {};
 
 /**
 body['advertParam']['marginBottom'] = 0;
