@@ -39,11 +39,29 @@
 let res = $response.body;
 let body = JSON.parse(res);
 
+body.materialsList = [];
+body.rid = '';
+
+if(body.advertParam) {
+  body.advertParam.marginBottom = 0;
+  body.advertParam.skipTime = 0;
+  body.advertParam.showSkipBtn = 0;
+  body.advertParam.skipTimeAgain = 0;
+  body.advertParam.chacheTime = 0;
+  body.advertParam.fixedscreen = 0;
+  body.advertParam.isDefault = 1;
+  body.advertParam.displayNumDi = 0;
+  body.advertParam.index = 0;
+  body.advertParam.bs = 0;
+}
+
+/**
 body['code'] = '00';
 body['materialsList'] = [];
 body['rid'] = '';
 
 body.advertParam.skipTime = 0;
+*/
 
 //body['advertParam'] = {};
 
