@@ -6,7 +6,7 @@ body=JSON.parse(body)
 body['data']['tab'].forEach((element, index) => {
 if(!(whitelist.includes(element['name']))) body['data']['tab'].splice(index,1)  
 });
-console.log(body['data']['tab']);
+//console.log(body['data']['tab']);
 
 body['data']['bottom'].forEach((element, index)=> {
     if(element['pos']==4){      
