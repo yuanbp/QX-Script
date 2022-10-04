@@ -16,7 +16,7 @@ let bottomArr=body['data']['bottom'].filter((element) => {
   //console.log(element);
   return bottomlist.includes(element['name']);
 });
-body['data']['bottom'].splice(0,body['data']['tab'].length)
+body['data']['bottom'].splice(0,body['data']['bottom'].length)
 body['data']['bottom'].push(...bottomArr);
 
 body=JSON.stringify(body);
