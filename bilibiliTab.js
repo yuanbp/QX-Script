@@ -5,8 +5,8 @@ body=JSON.parse(body)
 
 body['data']['tab'].forEach((element, index) => {
 if(!(whitelist.includes(element['name']))) {
-body['data']['tab'].splice(index,1);
-console.log(element['name']);
+  body['data']['tab'].splice(index,1);
+  console.log(element['name']);
 }  
 });
 
@@ -17,4 +17,4 @@ body['data']['bottom'].forEach((element, index)=> {
 })
 
 body=JSON.stringify(body)
-$done({body}) 
+$done({body})
