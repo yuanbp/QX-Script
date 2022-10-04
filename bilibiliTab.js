@@ -4,7 +4,6 @@ let body = $response.body
 body=JSON.parse(body)
 
 body['data']['tab'].forEach((element, index) => {
-console.log(element['name']);
 if(!(whitelist.includes(element['name']))) body['data']['tab'].splice(index,1)  
 });
 console.log(body['data']['tab']);
