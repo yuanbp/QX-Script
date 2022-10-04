@@ -13,10 +13,10 @@ body['data']['tab'].push(...tabArr);
 //console.log(body['data']['tab']);
 
 let bottomArr=body['data']['bottom'].filter((element) => {
-  console.log(element.name);
+  //console.log(element.name);
   return bottomlist.includes(element['name']);
 });
-console.log(bottomArr.length);
+//console.log(bottomArr.length);
 body['data']['bottom'].splice(0,body['data']['bottom'].length)
 body['data']['bottom'].push(...bottomArr);
 
