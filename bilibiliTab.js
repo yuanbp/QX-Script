@@ -4,7 +4,8 @@ let body = $response.body;
 body=JSON.parse(body);
 
 let tabArr = body['data']['tab'].filter((element) => {
-  return whitelist.includes(element['name'])(
+  console.log(element);
+  return whitelist.includes(element['name']);
 });
 body['data']['tab'].splice(0,body['data']['tab'].length)
 body['data']['tab'].push(...tanArr);
