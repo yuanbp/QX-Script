@@ -8,7 +8,7 @@ let tabArr = body['data']['tab'].filter((element) => {
   return whitelist.includes(element['name']);
 });
 body['data']['tab'].splice(0,body['data']['tab'].length)
-body['data']['tab'].push(...tanArr);
+body['data']['tab'].push(...tabArr);
 console.log(body['data']['tab']);
 
 body=JSON.stringify(body);
