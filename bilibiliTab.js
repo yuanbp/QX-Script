@@ -14,4 +14,7 @@ body['data']['bottom'].forEach((element, index)=> {
 })
 
 body=JSON.stringify(body)
+
+console.log(body)
+
 $done({body}) 
