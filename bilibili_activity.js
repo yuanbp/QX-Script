@@ -1,9 +1,9 @@
-let body = $response.body;
-let obj = JSON.parse(body);
+let res = $response.body;
+let body = JSON.parse(res);
 
-obj['data'] = {};
-body = JSON.stringify(obj);
+body['data'] = {};
+let result = JSON.stringify(body);
 
-//console.log(body);
+console.log(result);
 
-$done(body);
+$done(result);
