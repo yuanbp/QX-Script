@@ -1,7 +1,7 @@
 let res = $response.body;
 let body = JSON.parse(res);
 
-let items=body['data']['items'].filter(e -> {
+let items=body['data']['items'].filter(e => {
   if(e.hasOwnProperty('banner_item')){
     e['banner_item']=[];
   }
