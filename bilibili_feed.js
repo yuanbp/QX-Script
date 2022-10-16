@@ -11,6 +11,6 @@ body['data']['items']=items;
 
 let result = JSON.stringify(body);
 
-console.log(result);
+//console.log(result);
 
 $done(result);
