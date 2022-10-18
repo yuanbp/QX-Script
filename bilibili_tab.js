@@ -32,5 +32,5 @@ try{
   body=JSON.stringify(body);
   $done({body});
 } catch (err) {
-  magicJS.logError(`直播去广告出现异常：${err}`);
+  console.log(`bilibili_tab.js 出现异常：${err}`);
 }
