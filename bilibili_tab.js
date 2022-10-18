@@ -1,4 +1,4 @@
-let tablist=['追番','推荐','动画','影视'];
+];
 let bottomlist=['首页','动态','我的']
 
 let body = $response.body;
@@ -30,3 +30,6 @@ body['data']['bottom']=bottomArr;
 
 body=JSON.stringify(body);
 $done({body});
+} catch (err) {
+          console.log(`bilibili_tab.js 出现异常：${err}`);
+        }
