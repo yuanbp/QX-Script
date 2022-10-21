@@ -1,3 +1,4 @@
+try {
 //delete $response.body;
 //console.log(JSON.stringify($response));
 //console.log(JSON.stringify($request));
@@ -20,3 +21,8 @@ if($request.path.startsWith('/x/v2/splash/list?'))) {
 result = JSON.stringify(body);
 
 //console.log(result);
+
+$done(result);
+} catch (err) {
+  console.log(`bilibili_splash.js 出现异常：${err}`);
+}
