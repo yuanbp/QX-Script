@@ -1,3 +1,4 @@
+console.log($response);
 let res = $response.body;
 let body = JSON.parse(res);
 
