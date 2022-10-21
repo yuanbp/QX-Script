@@ -10,7 +10,7 @@ try {
     return e.title != '创作中心';
   });
   
-  let sections_v2 = body.data.sections_v2;
+//   let sections_v2 = body.data.sections_v2;
   
   const recommendedMenuWhiteList = ['我的课程', '我的钱包'];
   //let recommendedMenuWhiteList = [400, 404];
