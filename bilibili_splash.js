@@ -1,5 +1,6 @@
-delete $response.body;
-console.log(JSON.stringify($response));
+//delete $response.body;
+//console.log(JSON.stringify($response));
+console.log(JSON.stringify($request));
 
 let res = $response.body;
 let body = JSON.parse(res);
