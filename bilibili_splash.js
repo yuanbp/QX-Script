@@ -2,8 +2,9 @@ try {
   //delete $response.body;
   //console.log(JSON.stringify($response));
   //console.log(JSON.stringify($request));
-  let req = JSON.parse($request);
-  console.log(req.path);
+  let requestJson = JSON.stringify($request);
+  let request = JSON.parse(requestJson);
+  console.log(request.path);
   
 //   let res = $response.body;
 //   let body = JSON.parse(res);
