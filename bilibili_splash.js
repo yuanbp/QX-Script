@@ -4,7 +4,7 @@ try {
   //console.log(JSON.stringify($request));
   let requestJson = JSON.stringify($request);
   let request = JSON.parse(requestJson);
-  console.log(request.path);
+  //console.log(request.path);
   
   let res = $response.body;
   let body = JSON.parse(res);
