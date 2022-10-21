@@ -1,7 +1,5 @@
+delete $response.body;
 //console.log(JSON.stringify($response));
-for(const e of $response.keys()) {
-  console.log(e);
-}
 
 let res = $response.body;
 let body = JSON.parse(res);
