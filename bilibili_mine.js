@@ -1,4 +1,5 @@
 try {
+  let res = $response.body;
   let body = JSON.parse(res);
   
   delete body.data.mall_home;
