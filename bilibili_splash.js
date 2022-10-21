@@ -1,7 +1,7 @@
 try {
   //delete $response.body;
   //console.log(JSON.stringify($response));
-  console.log(JSON.stringify($request));
+  //console.log(JSON.stringify($request));
   //console.log($request.path);
   
 //   let res = $response.body;
