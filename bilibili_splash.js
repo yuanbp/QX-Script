@@ -1,7 +1,8 @@
 try {
   //delete $response.body;
   //console.log(JSON.stringify($response));
-  console.log($request.path);
+  console.log(JSON.stringify($request));
+  //console.log($request.path);
   
   let res = $response.body;
   let body = JSON.parse(res);
