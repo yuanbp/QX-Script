@@ -2,17 +2,17 @@ try {
   let res = $response.body;
   let body = JSON.parse(res);
   
-//   delete body.data.mall_home;
+  delete body.data.mall_home;
     
 //   console.log(body);
   
-//   let sections_v2 = body.data.sections_v2.filter((e, i) => {
-//     return e.title != '创作中心';
-//   });
+  let sections_v2 = body.data.sections_v2.filter((e, i) => {
+    return e.title != '创作中心';
+  });
   
   let sections_v2 = body.data.sections_v2;
   
-  let recommendedMenuWhiteList = ['我的课程', '我的钱包'];
+  const recommendedMenuWhiteList = ['我的课程', '我的钱包'];
   //let recommendedMenuWhiteList = [400, 404];
   
   let recommendedIndex = -1;
@@ -45,6 +45,8 @@ try {
   }
 
 //   console.log(body);
+  let result = JSON.stringify(body);
+  $done(result);
 } catch(err) {
   console.log(`bilibili_mine.js 出现异常：${err}`)
 }
