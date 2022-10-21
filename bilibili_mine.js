@@ -3,12 +3,14 @@ try {
   let body = JSON.parse(res);
   
   delete body.data.mall_home;
+    
+//   console.log(body);
   
-  //console.log(body);
+//   let sections_v2 = body.data.sections_v2.filter((e, i) => {
+//     return e.title != '创作中心';
+//   });
   
-  let sections_v2 = body.data.sections_v2.filter((e, i) => {
-    return e.title != '创作中心';
-  });
+  let sections_v2 = body.data.sections_v2;
   
   let recommendedMenuWhiteList = ['我的课程', '我的钱包'];
   //let recommendedMenuWhiteList = [400, 404];
@@ -28,7 +30,7 @@ try {
   function recommendedMenu(items) {
     return items.filter(e => {
       if(e.hasOwnProperty('title')) {
-        //console.log(e.title);
+//         console.log(e.title);
         return recommendedMenuWhiteList.includes(e.title);
       }
       return true;
@@ -42,7 +44,7 @@ try {
     return false;
   }
 
-  //console.log(body);
+//   console.log(body);
 } catch(err) {
   console.log(`bilibili_mine.js 出现异常：${err}`)
 }
