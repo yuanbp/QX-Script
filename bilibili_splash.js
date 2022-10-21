@@ -2,7 +2,9 @@ try {
   //delete $response.body;
   //console.log(JSON.stringify($response));
   //console.log(JSON.stringify($request));
-  //console.log($request.path);
+  if($request typeof 'object') {
+    console.log($request.path);
+  }
   
 //   let res = $response.body;
 //   let body = JSON.parse(res);
