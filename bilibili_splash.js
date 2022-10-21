@@ -4,12 +4,12 @@ try {
   //console.log(JSON.stringify($request));
   let requestJson = JSON.stringify($request);
   let request = JSON.parse(requestJson);
-  //console.log(request.path);
+  console.log(request.path);
   
   let res = $response.body;
   let body = JSON.parse(res);
   
-  if(request.path.startsWith('/x/v2/splash/list?'))) {
+  if(request.path.startsWith('/x/v2/splash/list?')) {
     body.data.max_time = 0;
     body.data.min_interval = 31536000;
     body.data.pull_interval = 31536000;
