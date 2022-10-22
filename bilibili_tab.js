@@ -8,11 +8,13 @@ try {
   let tabArr=body.data.tab.filter((e) => {
     return tablist.includes(e.name);
   });
+  delete body.data.tab;
   body.data.tab=tabArr;
 
   let bottomArr=body.data.bottom.filter((e) => {
     return bottomlist.includes(e.name);
   });
+  delete body.data.bottom;
   body.data.bottom=bottomArr;
 
   body=JSON.stringify(body);
