@@ -1,0 +1,7 @@
+# Block iOS Update
+host,mesu.apple.com,AppleIOSUpdate
+host,gdmf.apple.com,AppleIOSUpdate
+host,updates-http.cdn-apple.com,AppleIOSUpdate
+host,xp.apple.com,AppleIOSUpdate
+host,ns.itunes.apple.com,AppleIOSUpdate
+host,appldnld.apple.com,AppleIOSUpdate
