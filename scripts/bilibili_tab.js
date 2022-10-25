@@ -17,8 +17,8 @@ try {
   delete body.data.bottom;
   body.data.bottom=bottomArr;
 
-  body=JSON.stringify(body);
-  $done({body});
+  let result = JSON.stringify(body);
+  $done({result});
 } catch (err) {
   console.log(`bilibili_tab.js 出现异常：${err}`);
 }
