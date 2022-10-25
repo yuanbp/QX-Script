@@ -6,8 +6,8 @@ try {
     delete body.ad_info;
   }
   
-  JSON.stringify(body);
+  let result = JSON.stringify(body);
   $done(result);
 } catch (err) {
-  console.log(`bilibili_tab.js 出现异常：${err}`);
+  console.log(`zhihu_article.js 出现异常：${err}`);
 }
