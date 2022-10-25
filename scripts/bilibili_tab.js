@@ -18,7 +18,7 @@ try {
   body.data.bottom=bottomArr;
 
   let result = JSON.stringify(body);
-  $done({result});
+  $done(result);
 } catch (err) {
   console.log(`bilibili_tab.js 出现异常：${err}`);
 }
