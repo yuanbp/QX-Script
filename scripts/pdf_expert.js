@@ -1,5 +1,6 @@
 try{
   let res = $response.body;
+  console.log(res);
   let body = JSON.parse(res);
 
   let body = {};
@@ -9,7 +10,7 @@ try{
   
   let result = JSON.stringify(body);
 
-  //console.log(result);
+  console.log(result);
 
   $done(result);
 } catch (err) {
