@@ -1,6 +1,6 @@
 try{
   let res = $response.body;
-  console.log(res);
+  //console.log(res);
   let body = JSON.parse(res);
 
   body.linkedProducts.inAppStates.subscriptionExpirationDate = '10:05 30\/10\/2023';
