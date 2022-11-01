@@ -3,7 +3,7 @@ try{
   //console.log(res);
   let body = JSON.parse(res);
 
-  body.linkedProducts.inAppStates.subscriptionExpirationDate = '10:05 30\/10\/2023';
+  body.linkedProducts.inAppStates.subscriptionExpirationDate = '12:04 01/11/2023';
   body.linkedProducts.inAppStates.subscriptionState = 'active';
   body.linkedProducts.inAppStates.isEligibleForIntroPeriod = true;
   body.linkedProducts.inAppStates.isInGracePeriod = true;
